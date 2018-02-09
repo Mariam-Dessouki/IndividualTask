@@ -1,0 +1,27 @@
+$cd
+$mkdir repos  #creating directory
+$cd repos
+$mkdir IndividualTask
+$cd IndividualTask
+$git init
+$git add File1.rtf
+$git add File2.rtf
+$git add File3.rtf
+$git status #just checking if the 3 files where added to staging area
+$git rm File2.rtf --cached    #cached is used to remove the file only from the staging area
+$git add File2.rtf #git reset head could have also been used 
+$git status  # 3 files present in staging area
+$git commit -m "The three added files contain 3 section from the book Pro Git.The first section is about version control,the second is about dealing with branches and the third section is about distributed workflow"
+$git remote add origin https://github.com/Mariam-Dessouki/IndividualTask.git
+$git push -u origin master
+$echo >README.md
+$start README.md #to include the required info
+$git checkout -b ReadMe 
+$git add README.md
+$git commit -m "The readme file contains information about the repository"
+$git checkout master
+$git merge ReadMe
+$git add AllMyCommands.txt #the following part is typed before execution
+$git commit -m "The AllMyCommands.txt contains all git commands used to perform this task"
+$git push -u origin master
+
