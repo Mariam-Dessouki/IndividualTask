@@ -27,11 +27,11 @@ $git push -u origin master
 # this extra part was added to test deleting in another way
 $touch filetobedeleted.txt
 $git add .
-$ git commit -m "added file tobedeleted.txt"
-$ git rm -r filetobedeleted.txt
+$ git commit -m "added new file"
+$ git rm  filetobedeleted.txt
 $git commit -m "removed file"
 $git log --oneline #to get the SHA-1 of original commit
-$git reset ef89d55
+$git reset --hard 2f04239
 $ git add .
 $ git commit -m "updated allmycommands file"
 $ git push
