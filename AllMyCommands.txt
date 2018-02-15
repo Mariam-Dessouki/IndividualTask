@@ -24,4 +24,15 @@ $git merge ReadMe
 $git add AllMyCommands.txt #the following part is typed before execution
 $git commit -m "The AllMyCommands.txt contains all git commands used to perform this task"
 $git push -u origin master
+# this extra part was added to test deleting in another way
+$touch filetobedeleted.txt
+$git add .
+$ git commit -m "added file tobedeleted.txt"
+$ git rm -r filetobedeleted.txt
+$git commit -m "removed file"
+$git log --oneline #to get the SHA-1 of original commit
+$git reset ef89d55
+$ git add .
+$ git commit -m "updated allmycommands file"
+$ git push
 
